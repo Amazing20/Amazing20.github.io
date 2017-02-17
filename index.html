@@ -1,0 +1,286 @@
+
+<html>
+
+  <head>
+
+    <link  type="text/css" rel="stylesheet" href="main.css" />
+
+    <title>
+
+      Video Games
+
+    </title>
+
+
+    <script>
+
+      //start banner function
+
+      function  banner(){
+
+      var text= confirm("Did You Really Want to Click on My Banner?");
+
+      return text;
+
+      }//end banner function
+
+
+      //start answer function
+
+      function answer(){ 
+
+        var radio = document.getElementsByName("trivia"); 
+
+        var selection = false; 
+
+        var message = ""; 
+
+
+        for( var i = 0; i < radio.length; i++) { 
+
+          if(radio[i].value == "Miniclip.com" && radio[i].checked == true) {
+
+              selection = true; 
+
+          } //end if statement 
+
+        } //end for loop
+
+
+        if(selection == true) {
+
+          message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+
+          } else { 
+
+           message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+
+        }
+
+        document.getElementById("response").innerHTML = message;
+
+      } //end function answer  
+
+    </script>
+
+
+  </head>
+
+
+  <body id="background">
+
+    <a href="http://bing.com" onclick="return banner()">
+
+    <header id="header">
+
+      <a href="http://bing.com" onclick="return banner()">
+
+       Click to search more games
+
+      </a>
+
+      <nav>
+
+        <ul id="navmenu">
+
+          <li <a class="homeLink" href="home.html">Home</a>  </li>
+
+          <li class="navitem"> <a href="games.html">Games</a> </li>
+
+          <li class="navitem"> <a href="videos.html">Videos</a> </li>
+
+        </ul>
+
+          </ul>
+
+        </nav>
+
+        How is this website?
+
+    </header>
+
+
+     
+
+    <h1>
+
+      Video Games are <span class="wrap-text"> the best.</span>They bring joy to my happy unboring life
+
+    </h1>
+
+    <p>
+
+        Here there are hundreds of amazing games that you will need to have a great time playing.  Games are everywhere here and you will have a great time playing all of these games!
+
+        <u>
+
+           Hope you enjoy this website.
+
+        </u>
+
+        <b>
+
+            Eat while playing these games because it is too exciting.
+
+        </b>
+
+        <i>
+
+          Enjoy!
+
+        </i>
+
+    </p>
+
+
+    <ol>
+
+      <li>
+
+        We want to get popular games that you want on here so you have fun.
+
+      </li>
+
+      <li>
+
+        New games will be added.
+
+      </li>
+
+      <li>
+
+        Play games all day.
+
+      </li>
+
+    </ol>
+
+    <img src="https://cdn.tutsplus.com/mac/authors/jordan-merrick/gc-ps3.jpg" />
+
+    <img src="https://i.ytimg.com/vi/l7ZRBc59VCs/maxresdefault.jpg" />
+
+    <hr>
+
+
+
+
+  <h2 class="text">
+
+    Video game question
+
+  </h2>
+
+  <p>
+
+    What game website has bubble trouble?
+
+  </p>
+
+  <div class="wrap-list">
+
+    <ol>
+
+      <li> Look at the options </li>
+
+      <li> Choose one </li>
+
+      <li> Click Submit </li>
+
+    </ol>
+
+    </div>
+
+
+    <div class="wrap-trivia">
+
+      <form>
+
+         <div id="response"> </div>
+
+         <input type="radio" name= "trivia" value="Mini"> Miniclip.com <br>
+
+         <input type="radio" name= "trivia" value="Arm"> Armorgames.com <br>
+
+         <input type="radio" name= "trivia" value="Add"> Addictinggames.com <br>
+
+         <input type="radio" name= "trivia" value="Ro"> Roblox.com <br>
+
+         <input type="button" id="submit" value="Click Here"
+
+         onlick="answer()">
+
+       </form>
+
+   </div>
+
+  
+
+   <audio width="400" height="220" controls autoplay>
+
+      <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+
+      <source src="" type="audio/mpeg">
+
+    </audio>
+
+    <hr>
+
+      Here are some fun game websites:
+
+    </hr>
+
+    <p>
+
+      <li>
+
+         Roblox
+
+      </li>
+
+      <li>
+
+        Miniclip
+
+      </li>
+
+      <li>
+
+        Cool Math Games
+
+      </li>
+
+    </p>
+
+    <center>
+
+        Jeremy
+
+    </center>
+
+    <a
+
+      href="http://simplycoding.org">My Favorite Website
+
+    </a>
+
+    <video width="400" height="220" controls autoplay>
+
+      <source src="http://www.w3schools.com/HTML/mov_bbb.mp4" type="video/mp4">
+
+      <source src="http://www.w3schools.com/HTML/mov_bbb.ogg" type="video/ogg">
+
+      Your browser does not support HTML5 video.
+
+    </video>
+
+
+    <footer>
+
+      Jeremy
+
+    </footer>
+
+ </body>
+
+</html>
+
